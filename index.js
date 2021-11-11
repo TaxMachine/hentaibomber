@@ -5,7 +5,7 @@ const superagent = require("superagent")
 const prefix = config.prefix
 const client = new discord.Client()
 require("colors")
-client.login(token).catch(err => {if (err.toString().includes("provided"))console.log("Invalid Token".red)})
+client.login(token).catch(err => {console.log("Invalid Token".red)})
 client.on('ready', function () {
     console.clear()
     console.log(`
